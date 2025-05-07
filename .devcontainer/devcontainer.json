@@ -1,0 +1,10 @@
+{
+  "name": "SuperCollider Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/devcontainers/features/cmake:1": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y build-essential cmake qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libsndfile1-dev libjack-jackd2-dev libreadline-dev libasound2-dev libavahi-client-dev libudev-dev && git submodule update --init --recursive",
+  "customizations": {
